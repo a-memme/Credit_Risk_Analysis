@@ -48,3 +48,12 @@ The final two instances are two different types of machine learning models, that
 - high risk recall: 0.92
 
 <img width="824" alt="easy_ensemble_stats" src="https://user-images.githubusercontent.com/79600550/123695009-09d24a00-d828-11eb-9e4d-51768efa3d2d.png">
+
+## Summary
+ The first four models focused on different sampling techniques with use of logistic regression to help account for the inherent class inbalances in credit risk categorizing, while the final two used two different types of models to help account for biases. Oversampling techniques help scale the under-represented class when training the data, while undersampling techniques use the opposite approach by reducing the scale of the over-represented class. 
+
+Given the above statistics, the value of most importance in this circumstance is the recall/sensitivity score. Although precision and accuracy are also of importance, their values are not necessarily indicative of the model's reliability in judging all high risk circumstances. To elaborate, a high precision score means that the model is right most of the time. However, given that credit risk is inherently imbalanced - i.e that there are way more low risk circumstances than high - this could simply mean that the model detects each low risk instance correctly, but never detects a high risk one. In addition, simply looking for a good high-risk precision score indicates reliability in the instances that are considered high-risk, but doesn't account for false-negatives (i.e detecting low risk instances when they really are high). 
+
+Thus, sensitivity is the best metric when dealing with credit risk - the aim is to find a model that can predict all/almost all of high-risk circumstances, even if there is a high false-positive rate. Given the above stats, the Easy Ensemble AdaBoost Classifier yields the highest recall rate at 0.92 - meaning that 92% of high risk cases were actually categorized as high risk. Although the precision score for high risk is quite low (0.09), this simply means that there is a large rate of false positives (i.e that many circumstances were labelled high risk when they were actually low). This may not be the most ideal circumstance, however, the ramifications of a false high-risk categorization are much less detrimental to a peer-to-peer lending services company than a false low-risk categorization.
+
+
