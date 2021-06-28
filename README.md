@@ -3,7 +3,7 @@
 Comparing different sampling techniques as well as machine learning models to determine which combinations predict credit risk best. As credit risk is an inherenly unbalanced classification problem (i.e good loans drastically outweigh bad ones) more intricate sampling techniques are needed in order to get at reliable results from the ML models. 
 
 ## Results 
-The first four models used logistic regression with a number of different sampling techniques. The models and their respective statistics are as follows (classification report images can be referenced below each model):
+The first four models used logistic regression with a number of different sampling techniques. The models and their respective statistics are as follows (classification report images can be referenced below each model - derived from credit_risk_resampling.ipynb and credit_risk_ensemble.ipynb respectively):
 
 ### Random Oversampling
 - accuracy: 0.64
