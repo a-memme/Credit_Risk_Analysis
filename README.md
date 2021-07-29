@@ -1,7 +1,6 @@
 # Credit_Risk_Analysis
 ## Purpose 
-- Comparing different sampling techniques as well as machine learning models to determine which combinations predict credit risk best. Machine learning models are based off a sample dataset 
-
+- Comparing different sampling techniques as well as machine learning models to determine which combinations predict credit risk best. Machine learning models are based off a sample dataset
 *(See Resources/.LoanStats_2019Q1.csv.icloud)*
 
 - As credit risk is an inherently unbalanced classification problem (i.e good loans drastically outweigh bad ones) more intricate sampling techniques are needed in order to get at reliable results from the ML models. 
