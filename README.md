@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Credit Risk Analysis
 ## Purpose 
 - Comparing different sampling techniques as well as machine learning models to determine which combinations predict credit risk best. Machine learning models are based off a sample dataset
 *(See Resources/.LoanStats_2019Q1.csv.icloud)*
