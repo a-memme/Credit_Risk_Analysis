@@ -6,7 +6,7 @@
 - As credit risk is an inherently unbalanced classification problem (i.e good loans drastically outweigh bad ones) more intricate sampling techniques are needed in order to get at reliable results from the ML models. 
 
 ## Results 
-The first four models used logistic regression with a number of different sampling techniques. The models and their respective statistics are as follows (classification report images can be referenced below each model - derived from credit_risk_resampling.ipynb and credit_risk_ensemble.ipynb respectively):
+The first four models used logistic regression with a number of different sampling techniques. The models and their respective statistics are as follows (classification report images can be referenced below each model - derived from [Analysis/credit_risk_resampling.ipynb](https://github.com/a-memme/Credit_Risk_Analysis/blob/main/Analysis/credit_risk_resampling.ipynb) and [Analysis/credit_risk_ensemble.ipynb](https://github.com/a-memme/Credit_Risk_Analysis/blob/main/Analysis/credit_risk_ensemble.ipynb) respectively):
 
 ### Random Oversampling
 - accuracy: 0.64
