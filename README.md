@@ -1,9 +1,9 @@
 # Credit Risk Analysis
 ## Purpose 
-- Comparing different sampling techniques as well as machine learning models to determine which combinations predict credit risk best. Machine learning models are based off a sample dataset
+- Comparing different sampling techniques in combination with classification modelling to determine which combinations predict credit risk best. Data is derived from a sample set which can be accessed here:
 (See [Resources/.LoanStats_2019Q1.csv.icloud](https://github.com/a-memme/Credit_Risk_Analysis/blob/main/Analysis/Resources/.LoanStats_2019Q1.csv.icloud))
 
-- As credit risk is an inherently unbalanced classification problem (i.e good loans drastically outweigh bad ones) more intricate sampling techniques are needed in order to get at reliable results from the ML models. 
+- As credit risk is an inherently unbalanced classification problem (i.e good loans drastically outweigh bad ones) more intricate sampling techniques are needed in order to get at reliable results for prediction.
 
 ## Results 
 The first four models used logistic regression with a number of different sampling techniques. The models and their respective statistics are as follows (classification report images can be referenced below each model - derived from [Analysis/credit_risk_resampling.ipynb](https://github.com/a-memme/Credit_Risk_Analysis/blob/main/Analysis/credit_risk_resampling.ipynb) and [Analysis/credit_risk_ensemble.ipynb](https://github.com/a-memme/Credit_Risk_Analysis/blob/main/Analysis/credit_risk_ensemble.ipynb) respectively):
@@ -36,7 +36,7 @@ The first four models used logistic regression with a number of different sampli
 
 <img width="836" alt="smoteen_stats" src="https://user-images.githubusercontent.com/79600550/123694823-ced01680-d827-11eb-8c0c-da944ff69fb1.png">
 
-The final two instances are two different types of machine learning models, that are both used to help reduce bias and possibility of overfitting data: 
+The final two instances leverage tree models, with aim at taking advantage of their robustness to overfitting, looking to reduce bias in our predictions: 
 
 ### Balanced Random Forest Classifier 
 - accuracy: 0.79
